@@ -1,12 +1,10 @@
 #!/usr/bin/python3
 
 
-"""importing the required libraries"""
+"""importing required libraries"""
 import requests
 from sys import argv
 
-
-"""Defining the function to display employee's data"""
 def display():
     """Fetching API data"""
     users = requests.get("http://jsonplaceholder.typicode.com/users")
