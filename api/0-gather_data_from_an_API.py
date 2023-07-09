@@ -15,8 +15,7 @@ def display():
     for u in users.json():
         if u.get('id') == int(argv[1]):
             EMPLOYEE_NAME = (u.get('name'))
-            break
-            
+            break            
     TOTAL_NUM_OF_TASKS = 0
     NUMBER_OF_DONE_TASKS = 0
     TASK_TITLE = []
@@ -26,8 +25,7 @@ def display():
             TOTAL_NUM_OF_TASKS += 1
             if t.get('completed') is True:
                 NUMBER_OF_DONE_TASKS += 1
-                TASK_TITLE.append(t.get('title'))
-                
+                TASK_TITLE.append(t.get('title'))                
     print("Employee {} is done with tasks({}/{}):".format(EMPLOYEE_NAME,
                                                           NUMBER_OF_DONE_TASKS,
                                                           TOTAL_NUM_OF_TASKS))
