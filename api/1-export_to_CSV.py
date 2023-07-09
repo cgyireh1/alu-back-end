@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """
 Request from API; Return TODO list progress given employee ID
 Export data to CSV
@@ -27,7 +26,8 @@ def to_csv():
     with open(filename, "w") as csvfile:
         fieldnames = ["USER_ID", "USERNAME",
                       "TASK_COMPLETED_STATUS", "TASK_TITLE"]
-"""Creating a CSV writer object and writing each row to the CSV file"""      
+
+        """Creating a CSV writer object and writing each row to the CSV file"""
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames,
                                 quoting=csv.QUOTE_ALL)
         for task in USER_TODO_DATA:

@@ -2,7 +2,7 @@
 
 """
 Request from API, Return TODO list progress of all employees &
-Export data to JSON
+Expo[[Ort data to JSON
 """
 import json
 import requests
@@ -18,8 +18,8 @@ def all_to_json():
     todos = requests.get("http://jsonplaceholder.typicode.com/todos")
     for t in todos.json():
         USER_TODO_DATA.append((t.get('userId'),
-                                  t.get('completed'),
-                                  t.get('title')))
+            t.get('completed'),
+            t.get('title')))
 
     """exporting to json"""
     data = dict()
@@ -29,7 +29,7 @@ def all_to_json():
             if task[0] == u[0]:
                 t.append({"task": task[2], "completed": task[1],
                           "username": u[1]})
-        """ Adding the list of TODO items for the current employee to the dictionary """               
+        """Addinglist of TODO items of current employee to the dictionary"""      
         data[str(u[0])] = t
     filename = "todo_all_employees.json"
     with open(filename, "w") as f:
