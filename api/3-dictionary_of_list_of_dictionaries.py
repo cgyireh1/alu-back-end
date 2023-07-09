@@ -1,4 +1,4 @@
-#!user/bin/python
+#!/usr/bin/python
 
 """
 Request from API, Return TODO list progress of all employees &
