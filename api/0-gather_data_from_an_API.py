@@ -7,8 +7,9 @@ Export data to JSON
 import requests
 from sys import argv
 
+
 def display():
-    #Fetching API data
+    """Fetching API data"""
     users = requests.get("http://jsonplaceholder.typicode.com/users")
     """Iterating over the JSON response to find user with the specified id"""
     for u in users.json():
