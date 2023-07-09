@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 
 
-"""importing required libraries"""
 import requests
 from sys import argv
 
