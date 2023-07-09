@@ -33,5 +33,4 @@ for task in TASK_TITLE:
 
 
 if __name__ == "__main__":
-    display()
-~                          
+    display()                      
